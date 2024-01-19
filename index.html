@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+    <script src="./tailwind.config.js"></script>
+    <title>Responsive Web Design</title>
+</head>
+
+<body>
+    <header class="border-b border-gray-300 py-4 px-4 overflow-hidden">
+        <div class="container mx-auto flex items-center justify-between">
+            <img src="./header-left-dot.svg" width="88px" class="absolute right-full -top-4 mr-12">
+            <img src="./header-right-shapes.svg" width="141px" class="absolute left-full -top-4 ml-12">
+            <img src="./logo.svg" width="291px">
+            <nav>
+                <ul class="flex items-center">
+                    <li>
+                        <a href="#"
+                            class="px-4 py-2 transition hover:bg-gray-200 rounded-md active bg-gradient-to-r border-t-2 border-indigo-400 bg-gradient-to-br from-purple-500 to-indigo-600 hover:from-green-600 hover:via-blue-700 hover:to-purple-700 text-white rounded-md flex md:inline-flex font-medium text-lg cursor-pointer hover:shadow-lg transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 mr-2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+                            </svg>
+                            Free Signup</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero py-4 py-8 md:py-24 relative">
+        <div class="container mx-auto items-center justify-between relative text-center">
+            <h1
+                class="text-7xl relative md:text-7xl relative text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-purple-400 block text-center">
+                Use <span class="font-bold">AI</span> to solve, write & work</h1>
+            <p class="text-2xl text-gray-500 text-center max-w-3xl mx-auto mt-4">Enhance everything you do by using the
+                latest from OpenAI to solve problems, write solutions and make life easier.</p><a href=""
+                class="px-4 py-3 md:px-10 md:py-5 md:text-2xl transition hover:bg-gray-200 rounded-md active bg-gradient-to-r border-t-2 border-green-400 bg-gradient-to-br from-green-500 to-blue-600 hover:from-green-600 hover:via-blue-700 hover:to-purple-700 text-white rounded-md cursor-pointer hover:shadow-lg transition inline-flex items-center mt-8">Get
+                Started <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-8 h-8 ml-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg></a>
+        </div>
+    </section>
+    <section class="relative py-4 z-50">
+        <div class="container mx-auto">
+            <div class="rounded-xl shadow-2xl border flex divide-x bg-white">
+                <div class="p-8 flex-1">
+                    <div class="flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-12 w-12 mr-4">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                        </svg>
+                        <h2 class="text-4xl font-medium">Explain Code</h2>
+                    </div>
+                    <p class="text-gray-600 text-lg mt-2">Explain some code based on the syntax provided </p>
+                    <h3 class="mt-6 text-lg font-bold">Paste your code below: </h3>
+                    <div class="bg-gray-100 p-4 rounded-md mt-2 h-44 text-xl">
+                        function HelloWorld(text){
+                        echo text || "Hello World";
+                        }
+                    </div>
+                    <a href="#"
+                        class="mt-8 px-8 py-4 transition hover:bg-gray-200 rounded-2xl active bg-gradient-to-r bg-gradient-to-br from-purple-500 to-indigo-600 hover:from-green-600 hover:via-blue-700 hover:to-purple-700 text-white rounded-md flex md:inline-flex font-medium text-lg cursor-pointer hover:shadow-lg transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 mr-4">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                        </svg>
+                        Enhance with AI</a>
+                </div>
+                <div class="p-8 flex-1">
+                    <div class="flex items-center">
+                        <div
+                            class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-gray-800 sm:mx-0 sm:h-10 sm:w-10 bg-gray-200 text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </div>
+                        <h2 class="text-4xl font-medium ml-4">What does this code do?</h2>
+                    </div>
+                    <p class="text-gray-600 text-lg mt-2">The following code does:</p>
+                    <div class="flex items-center pt-4">
+                        <div
+                            class="inline-flex items-center justify-center h-10 w-10 rounded-full  sm:mx-0 bg-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </div>
+                        <div class="text-xl ml-4 mb-2">
+                            The code above is a function definition.?
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div
+                            class="inline-flex items-center justify-center h-10 w-10 rounded-full  sm:mx-0 bg-gray-200 flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </div>
+                        <div class="text-xl ml-4 mt-2 border-t-2 pt-3">
+                            It defines a new function called `HelloWorld` that takes a single argument called `text`
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div
+                            class="inline-flex items-center justify-center h-10 w-10 rounded-full  sm:mx-0  bg-gray-200 flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </div>
+                        <div class="text-xl ml-4 mt-2 border-t-2 pt-3">
+                            The body of the function is a single line of code that prints out the value of `text` if it is defined, or `Hello World` if it is not defined.
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <a href="#"
+                            class="mt-8 px-6 py-3 transition bg-gray-100 rounded-md active bg-gradient-to-r rounded-md flex md:inline-flex font-medium text-lg cursor-pointer hover:shadow-lg transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" />
+                              </svg> 
+                              Copy Content                            
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gradient-to-r from-purple-500 to-indigo-700 -mt-48 pt-48 relative">
+        <img src="./purple-top-left-shape.svg" width="250" class="absolute left-0 -top-60">
+            <div class="container mx-auto">
+            <div class="flex items-center justify-between">
+                <a href="#"
+                        class="mt-4 px-8 py-4 transition bg-white text-purple-600 rounded-2xl flex md:inline-flex text-xl font-medium cursor-pointer hover:shadow-lg transition items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6 mr-4">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                        </svg>
+                        Explain Code</a>
+                        <a href="#"
+                        class="mt-4 px-8 py-4 transition bg-purple-400 text-purple-600 rounded-2xl flex md:inline-flex text-xl font-medium cursor-pointer hover:shadow-lg transition items-center">
+                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.625 18.5698C4.625 17.0435 4.85625 15.6175 5.31875 14.2886C5.7639 13.0041 6.45161 11.8171 7.3445 10.7921H9.60458C8.75883 11.8936 8.10713 13.1313 7.6775 14.452C6.81223 17.1148 6.81601 19.9838 7.68829 22.6444C8.13537 23.9548 8.76746 25.145 9.58454 26.2087H7.34912C6.45248 25.2126 5.76376 24.0474 5.32338 22.7816C4.85288 21.4277 4.61822 20.0031 4.62963 18.5698" fill="#1F00BB"/>
+                            <path d="M15.4167 24.6667C15.4167 25.0755 15.2543 25.4677 14.9651 25.7568C14.676 26.0459 14.2839 26.2083 13.875 26.2083C13.4661 26.2083 13.074 26.0459 12.7849 25.7568C12.4958 25.4677 12.3333 25.0755 12.3333 24.6667C12.3333 24.2578 12.4958 23.8657 12.7849 23.5765C13.074 23.2874 13.4661 23.125 13.875 23.125C14.2839 23.125 14.676 23.2874 14.9651 23.5765C15.2543 23.8657 15.4167 24.2578 15.4167 24.6667Z" fill="#1F00BB"/>
+                            <path d="M21.9687 10.8117L21.5987 14.1355L24.9704 13.1951L25.2679 15.4614L22.1969 15.6772L24.2119 18.3597L22.1615 19.4543L20.7524 16.6284L19.519 19.4373L17.3915 18.3613L19.3895 15.6788L16.337 15.4444L16.6916 13.1874L19.9908 14.1278L19.6208 10.8009H21.9857" fill="#1F00BB"/>
+                            <path d="M32.375 18.5694C32.375 20.0833 32.1407 21.4924 31.6705 22.7997C31.2318 24.0585 30.5468 25.2172 29.6555 26.2083H27.4155C28.2356 25.1326 28.8736 23.9295 29.304 22.6471C29.7511 21.329 29.9731 19.9646 29.9731 18.5463C29.9731 17.1433 29.7573 15.7759 29.3225 14.4454C28.8941 13.1249 28.2434 11.8871 27.3985 10.7855H29.657C30.5553 11.8134 31.2431 13.0076 31.6813 14.3005C32.1438 15.6263 32.375 17.0478 32.375 18.5617" fill="#1F00BB"/>
+                            </svg>
+                            Regex
+                        </a>
+                        <a href="#"
+                        class="mt-4 px-8 py-4 transition bg-purple-400 text-purple-800 hover:bg-purple-400 rounded-2xl flex md:inline-flex text-xl font-medium cursor-pointer hover:shadow-lg transition items-center">
+                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.625 18.5698C4.625 17.0435 4.85625 15.6175 5.31875 14.2886C5.7639 13.0041 6.45161 11.8171 7.3445 10.7921H9.60458C8.75883 11.8936 8.10713 13.1313 7.6775 14.452C6.81223 17.1148 6.81601 19.9838 7.68829 22.6444C8.13537 23.9548 8.76746 25.145 9.58454 26.2087H7.34912C6.45248 25.2126 5.76376 24.0474 5.32338 22.7816C4.85288 21.4277 4.61822 20.0031 4.62963 18.5698" fill="#1F00BB"/>
+                            <path d="M15.4167 24.6667C15.4167 25.0755 15.2543 25.4677 14.9651 25.7568C14.676 26.0459 14.2839 26.2083 13.875 26.2083C13.4661 26.2083 13.074 26.0459 12.7849 25.7568C12.4958 25.4677 12.3333 25.0755 12.3333 24.6667C12.3333 24.2578 12.4958 23.8657 12.7849 23.5765C13.074 23.2874 13.4661 23.125 13.875 23.125C14.2839 23.125 14.676 23.2874 14.9651 23.5765C15.2543 23.8657 15.4167 24.2578 15.4167 24.6667Z" fill="#1F00BB"/>
+                            <path d="M21.9687 10.8117L21.5987 14.1355L24.9704 13.1951L25.2679 15.4614L22.1969 15.6772L24.2119 18.3597L22.1615 19.4543L20.7524 16.6284L19.519 19.4373L17.3915 18.3613L19.3895 15.6788L16.337 15.4444L16.6916 13.1874L19.9908 14.1278L19.6208 10.8009H21.9857" fill="#1F00BB"/>
+                            <path d="M32.375 18.5694C32.375 20.0833 32.1407 21.4924 31.6705 22.7997C31.2318 24.0585 30.5468 25.2172 29.6555 26.2083H27.4155C28.2356 25.1326 28.8736 23.9295 29.304 22.6471C29.7511 21.329 29.9731 19.9646 29.9731 18.5463C29.9731 17.1433 29.7573 15.7759 29.3225 14.4454C28.8941 13.1249 28.2434 11.8871 27.3985 10.7855H29.657C30.5553 11.8134 31.2431 13.0076 31.6813 14.3005C32.1438 15.6263 32.375 17.0478 32.375 18.5617" fill="#1F00BB"/>
+                            </svg>
+                            Regex
+                        </a>
+                        <a href="#"
+                        class="mt-4 px-8 py-4 transition bg-purple-400 text-purple-800 hover:bg-purple-400 rounded-2xl flex md:inline-flex text-xl font-medium cursor-pointer hover:shadow-lg transition items-center">
+                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.625 18.5698C4.625 17.0435 4.85625 15.6175 5.31875 14.2886C5.7639 13.0041 6.45161 11.8171 7.3445 10.7921H9.60458C8.75883 11.8936 8.10713 13.1313 7.6775 14.452C6.81223 17.1148 6.81601 19.9838 7.68829 22.6444C8.13537 23.9548 8.76746 25.145 9.58454 26.2087H7.34912C6.45248 25.2126 5.76376 24.0474 5.32338 22.7816C4.85288 21.4277 4.61822 20.0031 4.62963 18.5698" fill="#1F00BB"/>
+                            <path d="M15.4167 24.6667C15.4167 25.0755 15.2543 25.4677 14.9651 25.7568C14.676 26.0459 14.2839 26.2083 13.875 26.2083C13.4661 26.2083 13.074 26.0459 12.7849 25.7568C12.4958 25.4677 12.3333 25.0755 12.3333 24.6667C12.3333 24.2578 12.4958 23.8657 12.7849 23.5765C13.074 23.2874 13.4661 23.125 13.875 23.125C14.2839 23.125 14.676 23.2874 14.9651 23.5765C15.2543 23.8657 15.4167 24.2578 15.4167 24.6667Z" fill="#1F00BB"/>
+                            <path d="M21.9687 10.8117L21.5987 14.1355L24.9704 13.1951L25.2679 15.4614L22.1969 15.6772L24.2119 18.3597L22.1615 19.4543L20.7524 16.6284L19.519 19.4373L17.3915 18.3613L19.3895 15.6788L16.337 15.4444L16.6916 13.1874L19.9908 14.1278L19.6208 10.8009H21.9857" fill="#1F00BB"/>
+                            <path d="M32.375 18.5694C32.375 20.0833 32.1407 21.4924 31.6705 22.7997C31.2318 24.0585 30.5468 25.2172 29.6555 26.2083H27.4155C28.2356 25.1326 28.8736 23.9295 29.304 22.6471C29.7511 21.329 29.9731 19.9646 29.9731 18.5463C29.9731 17.1433 29.7573 15.7759 29.3225 14.4454C28.8941 13.1249 28.2434 11.8871 27.3985 10.7855H29.657C30.5553 11.8134 31.2431 13.0076 31.6813 14.3005C32.1438 15.6263 32.375 17.0478 32.375 18.5617" fill="#1F00BB"/>
+                            </svg>
+                            Regex
+                        </a>
+                        <a href="#"
+                        class="mt-4 px-8 py-4 transition bg-purple-400 text-purple-800 hover:bg-purple-400 rounded-2xl flex md:inline-flex text-xl font-medium cursor-pointer hover:shadow-lg transition items-center">
+                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.625 18.5698C4.625 17.0435 4.85625 15.6175 5.31875 14.2886C5.7639 13.0041 6.45161 11.8171 7.3445 10.7921H9.60458C8.75883 11.8936 8.10713 13.1313 7.6775 14.452C6.81223 17.1148 6.81601 19.9838 7.68829 22.6444C8.13537 23.9548 8.76746 25.145 9.58454 26.2087H7.34912C6.45248 25.2126 5.76376 24.0474 5.32338 22.7816C4.85288 21.4277 4.61822 20.0031 4.62963 18.5698" fill="#1F00BB"/>
+                            <path d="M15.4167 24.6667C15.4167 25.0755 15.2543 25.4677 14.9651 25.7568C14.676 26.0459 14.2839 26.2083 13.875 26.2083C13.4661 26.2083 13.074 26.0459 12.7849 25.7568C12.4958 25.4677 12.3333 25.0755 12.3333 24.6667C12.3333 24.2578 12.4958 23.8657 12.7849 23.5765C13.074 23.2874 13.4661 23.125 13.875 23.125C14.2839 23.125 14.676 23.2874 14.9651 23.5765C15.2543 23.8657 15.4167 24.2578 15.4167 24.6667Z" fill="#1F00BB"/>
+                            <path d="M21.9687 10.8117L21.5987 14.1355L24.9704 13.1951L25.2679 15.4614L22.1969 15.6772L24.2119 18.3597L22.1615 19.4543L20.7524 16.6284L19.519 19.4373L17.3915 18.3613L19.3895 15.6788L16.337 15.4444L16.6916 13.1874L19.9908 14.1278L19.6208 10.8009H21.9857" fill="#1F00BB"/>
+                            <path d="M32.375 18.5694C32.375 20.0833 32.1407 21.4924 31.6705 22.7997C31.2318 24.0585 30.5468 25.2172 29.6555 26.2083H27.4155C28.2356 25.1326 28.8736 23.9295 29.304 22.6471C29.7511 21.329 29.9731 19.9646 29.9731 18.5463C29.9731 17.1433 29.7573 15.7759 29.3225 14.4454C28.8941 13.1249 28.2434 11.8871 27.3985 10.7855H29.657C30.5553 11.8134 31.2431 13.0076 31.6813 14.3005C32.1438 15.6263 32.375 17.0478 32.375 18.5617" fill="#1F00BB"/>
+                            </svg>
+                            Regex
+                        </a>
+                        <div class="flex-item">
+                            <svg width="208" height="39" viewBox="0 0 208 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4_257)">
+                                <path d="M145.542 8.07988C142.343 8.07988 140.058 9.15812 138.937 11.1976L138.334 12.2965V8.61212H133.122V31.0601H138.604V17.706C138.604 14.5149 140.36 12.6842 143.427 12.6842C146.349 12.6842 148.024 14.4644 148.024 17.5729V31.0601H153.506V16.6071C153.506 11.271 150.528 8.07988 145.542 8.07988ZM118.967 8.07988C112.501 8.07988 108.483 12.0556 108.483 18.4608V21.6129C108.483 27.768 112.536 31.5946 119.058 31.5946C123.418 31.5946 126.475 30.0162 128.399 26.7769L125 24.8522C123.579 26.7219 121.31 27.8781 119.058 27.8781C115.756 27.8781 113.783 25.8685 113.783 22.5007V21.6083H129.09V17.8826C129.09 11.9179 125.116 8.07988 118.967 8.07988ZM124.104 17.9767H113.783V17.4399C113.783 13.7418 115.624 11.7046 118.967 11.7046C122.185 11.7046 124.104 13.7142 124.104 17.082V17.9767ZM207.919 4.91629V0.621706H188.968V4.91629H195.613V26.7678H188.968V31.0601H207.919V26.7678H201.274V4.91629H207.919ZM64.2148 0C55.7482 0 50.4877 5.20306 50.4877 13.5766V18.1052C50.4877 26.481 55.7459 31.6818 64.2148 31.6818C72.6837 31.6818 77.9418 26.481 77.9418 18.1052V13.5766C77.9395 5.20306 72.679 0 64.2148 0ZM72.2788 18.4149C72.2788 23.9758 69.3403 27.1669 64.2148 27.1669C59.0892 27.1669 56.1484 23.9758 56.1484 18.4149V13.2669C56.1484 7.70594 59.0869 4.51482 64.2124 4.51482C69.338 4.51482 72.2765 7.70594 72.2765 13.2669L72.2788 18.4149ZM95.1519 8.09135C92.2762 8.09135 89.7843 9.26365 88.4884 11.232L87.8975 12.1267V8.61212H82.6882V38.7844H88.1674V27.8575L88.756 28.7155C89.9891 30.5164 92.3971 31.5946 95.1961 31.5946C99.9214 31.5946 104.689 28.548 104.689 21.7459V17.9239C104.689 13.026 101.75 8.07988 95.1495 8.07988L95.1519 8.09135ZM99.2095 21.489C99.2095 25.1068 97.069 27.3551 93.6256 27.3551C90.4149 27.3551 88.172 24.9806 88.172 21.5785V18.2061C88.172 14.7512 90.4335 12.3401 93.6698 12.3401C97.0899 12.3401 99.2141 14.5883 99.2141 18.2061L99.2095 21.489ZM168.652 0.633176L157.589 31.0601H163.15L165.267 24.5356H177.982L178.003 24.5998L180.097 31.0601H185.664L174.592 0.621706L168.652 0.633176ZM166.635 20.2525L171.623 4.84747L176.563 20.2341L166.635 20.2525ZM36.2506 15.8712C36.6905 14.5653 36.8426 13.1818 36.6968 11.8133C36.5511 10.4448 36.1109 9.12271 35.4056 7.93535C33.26 4.25306 28.9478 2.35881 24.7367 3.2487C23.5706 1.96974 22.0837 1.01584 20.4254 0.4828C18.7671 -0.0502397 16.9957 -0.143651 15.2892 0.211948C13.5827 0.567547 12.0012 1.35964 10.7034 2.50866C9.40557 3.65769 8.43725 5.1232 7.89564 6.75801C6.52824 7.03453 5.23645 7.59564 4.1066 8.40386C2.97674 9.21207 2.03485 10.2488 1.34388 11.4447C-0.825 15.121 -0.332687 19.7585 2.56116 22.9125C2.11975 24.2178 1.96613 25.601 2.11058 26.9696C2.25503 28.3382 2.69421 29.6606 3.39875 30.8483C5.54669 34.532 9.86164 36.426 14.0754 35.535C15.0018 36.5636 16.1402 37.3855 17.4145 37.9458C18.6887 38.5061 20.0695 38.7919 21.4647 38.7841C25.7811 38.788 29.6056 36.0404 30.9238 31.9876C32.2911 31.7106 33.5827 31.1493 34.7125 30.3411C35.8422 29.533 36.7842 28.4965 37.4756 27.3009C39.6184 23.631 39.124 19.0185 36.2506 15.8712ZM21.4645 36.2459C19.7415 36.2486 18.0726 35.6532 16.7503 34.5641L16.983 34.434L24.8141 29.9768C25.009 29.8641 25.1708 29.7033 25.2837 29.5103C25.3965 29.3172 25.4565 29.0986 25.4577 28.8758V17.9889L28.7685 19.8774C28.7848 19.8856 28.7989 19.8974 28.8097 19.912C28.8205 19.9266 28.8277 19.9435 28.8306 19.9613V28.983C28.822 32.9908 25.5291 36.2377 21.4645 36.2461V36.2459ZM5.63161 29.5792C4.76757 28.1081 4.45731 26.3837 4.7554 24.7093L4.98806 24.8469L12.8269 29.3039C13.0209 29.4162 13.2417 29.4753 13.4666 29.4753C13.6915 29.4753 13.9124 29.4162 14.1063 29.3039L23.682 23.8607V27.6299C23.6811 27.6494 23.6757 27.6684 23.6663 27.6855C23.657 27.7027 23.6438 27.7175 23.6278 27.729L15.6959 32.2399C12.171 34.242 7.66787 33.0516 5.63161 29.5792ZM3.56906 12.7599C4.43912 11.2792 5.81244 10.1499 7.44591 9.57175V18.7459C7.44295 18.9676 7.5004 19.186 7.61225 19.3783C7.7241 19.5706 7.88624 19.7298 8.08177 19.8393L17.6109 25.2598L14.3001 27.1484C14.2822 27.1577 14.2622 27.1626 14.242 27.1626C14.2217 27.1626 14.2017 27.1577 14.1838 27.1484L6.26747 22.645C2.74962 20.6347 1.54327 16.1976 3.56906 12.7216V12.7599ZM30.7689 18.9907L21.2088 13.5167L24.5117 11.636C24.5296 11.6266 24.5496 11.6217 24.5698 11.6217C24.5901 11.6217 24.6101 11.6266 24.628 11.636L32.5446 16.1467C33.7549 16.8354 34.7416 17.8494 35.3894 19.0703C36.0373 20.2912 36.3195 21.6686 36.2032 23.0417C36.087 24.4149 35.577 25.727 34.7328 26.8251C33.8886 27.9232 32.7451 28.7618 31.4357 29.2431V20.0685C31.4289 19.8472 31.3638 19.6315 31.2469 19.4425C31.13 19.2535 30.9653 19.0977 30.7689 18.9905V18.9907ZM34.0641 14.1054L33.8314 13.9677L26.0082 9.47241C25.813 9.3595 25.5909 9.29997 25.3646 9.29997C25.1384 9.29997 24.9162 9.3595 24.7211 9.47241L15.1531 14.9154V11.1462C15.1511 11.1271 15.1544 11.1078 15.1626 11.0904C15.1708 11.0729 15.1835 11.058 15.1996 11.0471L23.1159 6.54374C24.3293 5.85453 25.7165 5.52022 27.1155 5.5799C28.5144 5.63957 29.8672 6.09078 31.0156 6.88075C32.1641 7.67071 33.0606 8.76677 33.6005 10.0407C34.1403 11.3147 34.3011 12.7139 34.0641 14.0746V14.1052V14.1054ZM13.3465 20.7872L10.0357 18.9065C10.0191 18.8966 10.005 18.8833 9.99425 18.8674C9.98352 18.8516 9.97645 18.8336 9.97355 18.8147V9.81607C9.9754 8.43566 10.3758 7.08429 11.1278 5.91996C11.8798 4.75564 12.9525 3.82646 14.2204 3.24108C15.4882 2.6557 16.8989 2.4383 18.2874 2.61429C19.676 2.79029 20.985 3.35241 22.0615 4.23494L21.8288 4.36502L13.9977 8.82226C13.8028 8.93498 13.641 9.09575 13.5282 9.28877C13.4153 9.48179 13.3554 9.70042 13.3541 9.92321L13.3465 20.7872ZM15.1454 16.9645L19.4099 14.541L23.682 16.9645V21.8116L19.4252 24.2353L15.1533 21.8116L15.1456 16.9645H15.1454Z" fill="white" fill-opacity="0.6"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4_257">
+                                <rect width="208" height="39" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                                
+                        </div>
+                </div>
+            </div>
+
+
+        <div class="h-48"></div>
+        <div class="h-48"></div>
+    </section>
+</body>
+
+</html>
